@@ -8,7 +8,7 @@
 $(call inherit-product, device/realme/sm7125-common/common.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/realme/RMX2170/RMX2170-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/nasha/nasha-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -21,11 +21,7 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/svi_config_206B1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/svi_config_206B1.xml
-
-# Init scripts
-#PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.RMX2170.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.RMX2170.rc
+    $(LOCAL_PATH)/configs/svi_config_20711.xml:$(TARGET_COPY_OUT_VENDOR)/etc/svi_config_20711.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

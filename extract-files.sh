@@ -14,7 +14,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=RMX2170
+export DEVICE=nasha
 export DEVICE_COMMON=sm7125-common
 export VENDOR=realme
 
