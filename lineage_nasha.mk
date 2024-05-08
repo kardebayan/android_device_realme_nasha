@@ -10,11 +10,11 @@ $(call inherit-product, device/realme/nasha/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common AospExtended stuff
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_nasha
+PRODUCT_NAME := lineage_nasha
 PRODUCT_DEVICE := nasha
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 8 Pro
